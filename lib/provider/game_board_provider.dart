@@ -80,6 +80,7 @@ class GameBoardProvider extends ChangeNotifier {
     _winner = null;
     _gameOver = false;
     twoPlayerGame = false;
-    _streamSubscription.cancel();
+
+    _streamSubscription?.cancel();
   }
 }
